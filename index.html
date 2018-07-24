@@ -202,33 +202,24 @@ img {vertical-align: middle;}
                 <!-- <span class="title">Bleeding Hollow - Horde - US</span>
       <h1>IRONWOLF CLAN</h1> -->
                 <img class="arrow" src="img/arrow.svg" alt="Down arrow">
-            </div>
-            <div class="primary-content t-border">
-                
-                <!-- <a class="callout" href="#more">Find out more</a> -->
-                <!-- <div class="wildlife"> -->
-                    
-<h2>For the Horde!</h2>
-<!-- <p>Change image every 2 seconds:</p> -->
-
-<div class="slideshow-container">
+                <div class="slideshow-container">
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 3</div>
-  <img src="img_nature_wide.jpg" style="width:100%">
-  <div class="text">Caption Text</div>
+  <img src="img_nature_wide.jpg"  style="width:100%">
+  <div class="text">Check out Ironwolf Clan merch by Grimsparkle!</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 3</div>
   <img src="img_snow_wide.jpg" style="width:100%">
-  <div class="text">Caption Two</div>
+  <div class="text">Ironwolf Clan Comics by Grimsparkle!</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 3</div>
   <img src="img_mountains_wide.jpg" style="width:100%">
-  <div class="text">Caption Three</div>
+  <div class="text">Ironwolf Clan Merch by Grimsparkle!</div>
 </div>
 
 </div>
@@ -258,33 +249,110 @@ function showSlides() {
     }
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
+    setTimeout(showSlides, 4000); // Change image every 4 seconds
 }
 </script>
 
-<p class="intro">
+            </div>
+            <div class="primary-content t-border">
+                
+                <!-- <a class="callout" href="#more">Find out more</a> -->
+                <!-- <div class="wildlife"> -->
+                    
+<h2>Check us out on Twitch!</h2>
+
+              <!-- Add a placeholder for the Twitch embed -->
+    <div id="twitch-embed"></div>
+
+    <!-- Load the Twitch embed script -->
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+    <script type="text/javascript">
+      new Twitch.Embed("twitch-embed", {
+        width: 854,
+        height: 480,
+        channel: "IWCguldannarallys"
+      });
+    </script>
+
+<!-- <p>Change image every 2 seconds:</p> -->
+<!-- 
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="img_nature_wide.jpg"  style="width:100%">
+  <div class="text">Check out Ironwolf Clan merch by Grimsparkle!</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="img_snow_wide.jpg" style="width:100%">
+  <div class="text">Ironwolf Clan Comics by Grimsparkle!</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="img_mountains_wide.jpg" style="width:100%">
+  <div class="text">Ironwolf Clan Merch by Grimsparkle!</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 4000); // Change image every 4 seconds
+}
+</script> -->
+ 
+
+<!-- <p class="intro">
                     Ironwolf Clan was created to make an everlasting effort to crush the Alliance, and put their face in the dirt, banding together proud Horde players that take great pride in stomping Alliance faces in the dirt. Ironwolf Clan was created on May 22 of 2009 on the realm Andorhal. In 2012 Ironwolf Clan transferred from Andorhal to Bleeding Hollow.
                 </p>
-
-
+ -->
+<div class="secondary-content t-border group">
                 </div>
                 <!-- End .wildlife -->
                 <!-- <a class="callout" href="#wildlife">See the Wildlife</a> -->
             </div>
             <!-- End .primary-content -->
-            <div class="secondary-content t-border group">
-                <div class="resorts">
+            
+                <!-- <div class="resorts">
                     <img src="img/resort.jpg" alt="Resort">
                     <h3>We Fight for the Horde!</h3>
                     <p>
                         Ironwolf Clan is the poster guild of the Horde. We represent the Horde both big and small on all fronts of battle.
                     </p>
-                    <!--  <ul>
+                     <ul>
           <li><a href="#hotels">Lake Tahoe Resort Hotel</a></li>
           <li><a href="#resorts">South Lake Tahoe Resorts</a></li>
           <li><a href="#lodging">Tahoe Ski Resort Lodging</a></li>
         </ul>
-      -->
+     
                 </div>
                 <div class="tips">
                     <img src="img/mtn-landscape.jpg" alt="Mountain Landscape">
@@ -292,7 +360,7 @@ function showSlides() {
                     <p>
                         A new Expansion, Battle For Azeroth, has been announced! Lots of changes coming to both PvP and PvE, Stay informed on the battle that awaits you!
                     </p>
-                    <!--  <ol>
+                      <ol>
           <li>Bring layers of clothing</li>
           <li>Pack sunscreen</li>
           <li>Carry extra water just in case</li>
@@ -300,11 +368,11 @@ function showSlides() {
         </ol>
       -->
                 </div>
-            </div>
+            </div> 
             <!-- End .secondary-content -->
             <footer class="main-footer">
                 <!--- <p>All rights reserved to the state of <a href="#">California</a>.</p> ---->
-                <a href="#top">Back to top &raquo;</a>
+              <!--   <a href="#top">Back to top &raquo;</a> -->
             </footer>
 </body>
 
